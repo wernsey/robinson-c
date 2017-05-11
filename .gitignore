@@ -1,0 +1,22 @@
+.gdbinit
+
+*.o
+
+# Executables:
+*.exe
+
+# generated code
+*.x.h
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*~
+
+# Generated documentation:
+README.html
+
+# Where I put the original https://github.com/mbrubeck/robinson files
+robinson-master
