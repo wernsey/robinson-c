@@ -1,5 +1,4 @@
 CC=gcc
-#CC=C:\Tools\tcc\tcc.exe
 
 EXECUTABLE=rob.exe
 
@@ -7,11 +6,11 @@ EXECUTABLE=rob.exe
 #BUILD=debug
 
 # Add your source files here:
-SOURCES=dom.c html.c css.c style.c \
-    refcnt.c refalist.c refhash.c \
-    stream.c layout.c display.c \
-    bmpcanvas.c bmp.c \
-    print.c main.c
+SOURCES=src/dom.c src/html.c src/css.c src/style.c \
+    src/refcnt.c src/refalist.c src/refhash.c \
+    src/stream.c src/layout.c src/display.c \
+    src/bmpcanvas.c src/bmp.c \
+    src/print.c src/main.c
 OBJECTS=$(SOURCES:.c=.o)
 
 CFLAGS=-c -Wall
