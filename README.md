@@ -4,7 +4,10 @@ Robinson-C
 
 C implementation of Matt Brubeck's "[Robinson][]" HTML engine.
 
+It uses this [bitmap library][bitmap] to render graphics.
+
 [Robinson]: https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html
+[bitmap]: https://github.com/wernsey/bitmap
 
 References
 ----------
@@ -27,15 +30,15 @@ TODO
 
 Organised according to priority and (_apparent_) ease of implementation
 
-* [] Text rendering, obviously.
-* [] Inline elements. To implement, start at the [Normal Flow][normalflow] section of (2).
+* [ ] Text rendering, obviously.
+* [ ] Inline elements. To implement, start at the [Normal Flow][normalflow] section of (2).
   * Lines that do not fit in the width of a container should be split into multiple `inline` blocks.
   * Note what happens to the margin and especially the _border_.
-* [] [Absolute positioning](https://www.w3.org/TR/CSS2/visuren.html#absolute-positioning)
-* [] [Collapsing Margins](https://www.w3.org/TR/CSS2/box.html#collapsing-margins)
-* [] Image support - might depend on the framework I use to render it
-* [] `style` attribute, and `<style/>` tag
-* [] More sophisticated CSS parsing as per [Syntax and basic data types](https://www.w3.org/TR/2011/REC-CSS2-20110607/syndata.html)
+* [ ] [Absolute positioning](https://www.w3.org/TR/CSS2/visuren.html#absolute-positioning)
+* [ ] [Collapsing Margins](https://www.w3.org/TR/CSS2/box.html#collapsing-margins)
+* [ ] Image support - might depend on the framework I use to render it
+* [ ] `style` attribute, and `<style/>` tag
+* [ ] More sophisticated CSS parsing as per [Syntax and basic data types](https://www.w3.org/TR/2011/REC-CSS2-20110607/syndata.html)
 
 [normalflow]: https://www.w3.org/TR/CSS2/visuren.html#normal-flow
 
