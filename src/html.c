@@ -1,5 +1,9 @@
 /*
 https://limpet.net/mbrubeck/2014/08/11/toy-layout-engine-2.html
+
+You might want to look at 
+https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/#HTML_Parser
+for more details on how a more authentic HTML parser might work.
 */
 
 #include <stdio.h>
