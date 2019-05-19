@@ -19,11 +19,17 @@ int main(int argc, char *argv[]) {
     
 	rc_init();
 	
-    //~ const char *html = "robinson-master/examples/test.html";
-    //~ const char *css = "robinson-master/examples/test.css";	
     const char *html = "test/simple.html";
     const char *css = "test/simple.css";
+    // const char *html = "test/inline.html";
+    // const char *css = "test/inline.css";
     
+	if(argc > 1) {
+		html = argv[1];
+		if(argc > 2) 
+			css = argv[2];
+	}
+
     Stream *r = file_stream(html);
     //Stream *r = string_stream("test.html");
     //Stream *r = string_stream("<html><head>HEAD</head><body>BODY</body></html>");
